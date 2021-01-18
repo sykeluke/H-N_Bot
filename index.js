@@ -104,12 +104,15 @@ if(message.content.toLowerCase().startsWith (".pricing")){
   .setAuthor('H&N Bot')
   .setDescription('We have got you the latest price info')
   .addFields(
-    { name: '1GB ram will cost you', value: '$0.50' },
-    { name: '1GB HDD Storage will cost you', value: '$0.30' },
-    { name: '1 server will cost you', value: '$0.50' },
-    { name: 'for extra ports you must be a patreon member', value: '' },
-    { name: '1 Database with 5GB storage will cost you ', value: '$1' },
-    { name: 'To place an order please open a ticket'},
+    { name: 'A 1GB ram server will  cost you', value: '$1 per month' },
+    { name: 'A 2GB ram server will  cost you', value: '$1.50' },
+    { name: 'A 3GB ram server will  cost you', value: '$2.50' },
+    { name: 'A 4GB ram server will  cost you', value: '$3.50' },
+    { name: 'A 5GB ram server will  cost you ', value: '$4.50' },
+    { name: 'A 6GB ram server will  cost you ', value: '$5.50' },
+    { name: 'A 7GB ram server will  cost you ', value: '$6.50' },
+    { name: 'A 8GB ram server will  cost you ', value: '$7.50' },
+    { name: 'To place an order please open a ticket},
 
 
   )
