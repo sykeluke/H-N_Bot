@@ -123,7 +123,6 @@ if(message.content.toLowerCase().startsWith (".pricing")){
 bot.on("message", async(msg) => {
   if (!msg.guild) return;
   const member = msg.guild.member(msg.author);
-  if (message.guild.member(message.author).hasPermission('ADMINISTRATOR')) {
   if(msg.content.toLowerCase().startsWith (".purge")){
 
 const args = msg.content.split(' ').slice(1); // All arguments behind the command name with the prefix
@@ -144,7 +143,7 @@ const amount = args.join(' '); // Amount of messages which should be deleted
   await(5000);
   msg.channel.send("Deleted These Messages")
    }
-}
+
 });
 
 bot.on('message', message => {
