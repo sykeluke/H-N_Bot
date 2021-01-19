@@ -284,5 +284,5 @@ if(message.content.startsWith(`.verify`)) {
   
 });
 
-bot.login("Nzk0MzAyODkyNzM1MzMyMzcy.X-42Nw.Sw01knpQ_VraKvph0_LoBkYseTc");
+bot.login("Nzk0MzAyODkyNzM1MzMyMzcy.X-42Nw.gv2bdHZizthMGqbojlYMPaX3JnA");
 
