@@ -278,7 +278,7 @@ bot.on('message', message => {
 if(message.content.startsWith(`.verify`)) {
 
   message.member.roles.add("801137313064419376").then(
-  message.react('✔')).catch(err => console.log(err)) 
+  message.react('☑')).catch(err => console.log(err)) 
 
 }
   
