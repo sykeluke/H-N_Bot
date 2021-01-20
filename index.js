@@ -46,7 +46,7 @@ bot.on("message", (message) => {
     .setColor('#0099ff')
     .setTitle('H&N Services Help')
     .setAuthor('H&N services Manager')
-    .setDescription('The help section of the H&N Bot')
+    .setDescription('The help section of the Pheonix')
     .addFields(
       { name: 'Get the help you need!', value: 'We will help you the whole way' },
       { name: '\u200B', value: '\u200B' },
@@ -83,7 +83,7 @@ bot.on("message", (message) => {
     .setAuthor('H&N Bot')
     .setDescription('You ran the command to fetch the panel url spot the dog found it!')
     .addFields(
-      { name: 'The url is', value: 'https://panel.hnservices.ml' },
+      { name: 'The url is', value: 'https://panel.pheonix.ml' },
 
     )
 
@@ -100,8 +100,8 @@ bot.on("message", (message) => {
 if(message.content.toLowerCase().startsWith (".pricing")){
   const priceEmbed = new Discord.MessageEmbed()
   .setColor('#0099ff')
-  .setTitle('H&N Price Managment')
-  .setAuthor('H&N Bot')
+  .setTitle('pheonix pricing')
+  .setAuthor('Pheonix bot')
   .setDescription('We have got you the latest price info')
   .addFields(
     { name: 'A 1GB ram server will  cost you', value: '$1 per month' },
@@ -195,12 +195,12 @@ bot.on('guildMemberAdd', member => {
   
       const joinEmbed = new Discord.MessageEmbed()
       .setColor('#f2df27')
-      .setTitle('H&N Services Would like to welcome you to the discord server')
-      .setAuthor('H&N Bot')
+      .setTitle('pixel hosting Would like to welcome you to the discord server')
+      .setAuthor('pixel')
       .setDescription('We hope you love our services!')
       .addFields(
         { name: 'We have a custom bot with all of its fun and useful commands', value: 'prefix: .' },
-        { name: 'On behalf of our owner phelix and services manager sykelukemc', value: 'We wish you have a great time' },
+        { name: 'On behalf of our owner drumnbase and co-owner sykelukemc', value: 'We wish you have a great time' },
         { name: 'Please read our rules', value: 'To verify you will need to react with the emoji shown' },
         { name: 'We will host regualar giveaways ', value: '  These could be more servers or more ram' },
         { name: 'If you have any issues please open a ticket with ', value: '$open' },
