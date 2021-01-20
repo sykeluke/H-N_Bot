@@ -3,7 +3,7 @@ const bot = new Discord.Client();
 
 bot.on('ready', () => {
   console.info(`Logged in as ${bot.user.tag}!`);
-  bot.user.setActivity('The H&N Community', { type: 'WATCHING' });
+  bot.user.setActivity('The pheonix Community', { type: 'WATCHING' });
 });
 bot.on('messageDelete', message => {
 	console.log(`A message by ${message.author.tag} was deleted, but we don't know by who yet.`);
@@ -44,9 +44,9 @@ bot.on("message", (message) => {
   if(message.content.startsWith (".help")){
     const helpEmbed = new Discord.MessageEmbed()
     .setColor('#0099ff')
-    .setTitle('H&N Services Help')
-    .setAuthor('H&N services Manager')
-    .setDescription('The help section of the Pheonix')
+    .setTitle('Pheonix Help')
+    .setAuthor('Pheonix Bot')
+    .setDescription('The help section of the Pheonix Bot')
     .addFields(
       { name: 'Get the help you need!', value: 'We will help you the whole way' },
       { name: '\u200B', value: '\u200B' },
@@ -80,7 +80,7 @@ bot.on("message", (message) => {
     const ipEmbed = new Discord.MessageEmbed()
     .setColor('#0099ff')
     .setTitle('Panel  url retrieval')
-    .setAuthor('H&N Bot')
+    .setAuthor('Pheonix Bot')
     .setDescription('You ran the command to fetch the panel url spot the dog found it!')
     .addFields(
       { name: 'The url is', value: 'https://panel.pheonix.ml' },
@@ -277,7 +277,7 @@ if(message.content.startsWith(`.stats`)) {
 bot.on('message', message => {
 if(message.content.startsWith(`.verify`)) {
 
-  message.member.roles.add("798894327328931888").then(
+  message.member.roles.add("801137313064419376").then(
   message.react('✔')).catch(err => console.log(err)) 
 
 }
