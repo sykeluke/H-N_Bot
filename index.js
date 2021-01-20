@@ -112,7 +112,7 @@ if(message.content.toLowerCase().startsWith (".pricing")){
     { name: 'A 6GB ram server will  cost you ', value: '$5.50' },
     { name: 'A 7GB ram server will  cost you ', value: '$6.50' },
     { name: 'A 8GB ram server will  cost you ', value: '$7.50' },
-    { name: 'To place an order please open a ticket},
+    { name: 'To place an order please open a ticket'},
 
 
   )
