@@ -3,7 +3,7 @@ const bot = new Discord.Client();
 
 bot.on('ready', () => {
   console.info(`Logged in as ${bot.user.tag}!`);
-  bot.user.setActivity('The pheonix Community', { type: 'WATCHING' });
+  bot.user.setActivity('The H&N Community', { type: 'WATCHING' });
 });
 bot.on('messageDelete', message => {
 	console.log(`A message by ${message.author.tag} was deleted, but we don't know by who yet.`);
@@ -44,8 +44,8 @@ bot.on("message", (message) => {
   if(message.content.startsWith (".help")){
     const helpEmbed = new Discord.MessageEmbed()
     .setColor('#0099ff')
-    .setTitle('Pheonix Help')
-    .setAuthor('Pheonix Bot')
+    .setTitle('H&N Help')
+    .setAuthor('H&N Bot')
     .setDescription('The help section of the Pheonix Bot')
     .addFields(
       { name: 'Get the help you need!', value: 'We will help you the whole way' },
@@ -80,10 +80,10 @@ bot.on("message", (message) => {
     const ipEmbed = new Discord.MessageEmbed()
     .setColor('#0099ff')
     .setTitle('Panel  url retrieval')
-    .setAuthor('Pheonix Bot')
+    .setAuthor('H&N Bot')
     .setDescription('You ran the command to fetch the panel url spot the dog found it!')
     .addFields(
-      { name: 'The url is', value: 'https://panel.pheonix.ml' },
+      { name: 'The url is', value: 'http://panel.hnservices.ml:8080' },
 
     )
 
@@ -100,8 +100,8 @@ bot.on("message", (message) => {
 if(message.content.toLowerCase().startsWith (".pricing")){
   const priceEmbed = new Discord.MessageEmbed()
   .setColor('#0099ff')
-  .setTitle('pheonix pricing')
-  .setAuthor('Pheonix bot')
+  .setTitle('H&N pricing')
+  .setAuthor('H&N bot')
   .setDescription('We have got you the latest price info')
   .addFields(
     { name: 'A 1GB ram server will  cost you', value: '$1 per month' },
@@ -195,13 +195,13 @@ bot.on('guildMemberAdd', member => {
   
       const joinEmbed = new Discord.MessageEmbed()
       .setColor('#f2df27')
-      .setTitle('pixel hosting Would like to welcome you to the discord server')
-      .setAuthor('pixel')
+      .setTitle('H&N hosting Would like to welcome you to the discord server')
+      .setAuthor('H&N')
       .setDescription('We hope you love our services!')
       .addFields(
         { name: 'We have a custom bot with all of its fun and useful commands', value: 'prefix: .' },
-        { name: 'On behalf of our owner drumnbase and co-owner sykelukemc', value: 'We wish you have a great time' },
-        { name: 'Please read our rules', value: 'To verify you will need to react with the emoji shown' },
+        { name: 'On behalf of our owner phelix and co-owner sykelukemc', value: 'We wish you have a great time' },
+        { name: 'Please read our rules', value: 'To verify you will need to type .verify in #verify' },
         { name: 'We will host regualar giveaways ', value: '  These could be more servers or more ram' },
         { name: 'If you have any issues please open a ticket with ', value: '$open' },
     
@@ -231,7 +231,7 @@ let timeout
 
 bot.on('message', ({channel, content, member}) => {
 
-  if (channel.id === '798894328302927916') {
+  if (channel.id === '802293741272432701') {
     if (member.user.bot) return
     if (Number(content) === count + 1) {
       count++
@@ -277,7 +277,7 @@ if(message.content.startsWith(`.stats`)) {
 bot.on('message', message => {
 if(message.content.startsWith(`.verify`)) {
 
-  message.member.roles.add("801137313064419376").then(
+  message.member.roles.add("801824083574259735").then(
   message.react('☑')).catch(err => console.log(err)) 
 
 }
