@@ -46,7 +46,7 @@ bot.on("message", (message) => {
     .setColor('#0099ff')
     .setTitle('H&N Help')
     .setAuthor('H&N Bot')
-    .setDescription('The help section of the Pheonix Bot')
+    .setDescription('The help section of the HN Bot')
     .addFields(
       { name: 'Get the help you need!', value: 'We will help you the whole way' },
       { name: '\u200B', value: '\u200B' },
@@ -83,7 +83,7 @@ bot.on("message", (message) => {
     .setAuthor('H&N Bot')
     .setDescription('You ran the command to fetch the panel url spot the dog found it!')
     .addFields(
-      { name: 'The url is', value: 'http://panel.hnservices.ml:8080' },
+      { name: 'The url is', value: 'http://panel.hnhosting.ml' },
 
     )
 
@@ -231,7 +231,7 @@ let timeout
 
 bot.on('message', ({channel, content, member}) => {
 
-  if (channel.id === '802293741272432701') {
+  if (channel.id === '802944381799235634') {
     if (member.user.bot) return
     if (Number(content) === count + 1) {
       count++
