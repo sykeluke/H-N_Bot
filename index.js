@@ -283,6 +283,33 @@ if(message.content.startsWith(`.verify`)) {
 }
   
 });
-
+bot.on('message', message => {
+if(message.content.startsWith(`phoenix5`)) {
+	      const promo5 = new Discord.MessageEmbed()
+      .setColor('#f2df27')
+      .setTitle('H&N hosting Would like to help you redeem a promocode')
+      .setAuthor('H&N')
+      .setDescription('We hope you love our services!')
+      .addFields(
+        { name: 'You have redeemed a 5% off promocode show this in ticket', value: 'Promocode value: phoenix5' },
+    
+      )
+member.user.send(promo5);
+}
+});
+bot.on('message', message => {
+if(message.content.startsWith(`moon5`)) {
+	      const mpromo5 = new Discord.MessageEmbed()
+      .setColor('#f2df27')
+      .setTitle('H&N hosting Would like to help you redeem a promocode')
+      .setAuthor('H&N')
+      .setDescription('We hope you love our services!')
+      .addFields(
+        { name: 'You have redeemed a 5% off promocode show this in ticket', value: 'Promocode value: moon5' },
+    
+      )
+member.user.send(mpromo5);
+}
+});
 bot.login("Nzk0MzAyODkyNzM1MzMyMzcy.X-42Nw.q1KyS7XO83gS5S8MMBarpw_k1gE");
 
