@@ -4,7 +4,7 @@ const ms = require("parse-ms");
 const randomstring = require("randomstring");
 
 module.exports.run = async (bot, message, args) => {
-    if(!message.content.startsWith('ticket.'))return;  
+    if(!message.content.startsWith('.'))return;  
 
   let permembed = new Discord.RichEmbed()
   .setColor('#e64b0e')
