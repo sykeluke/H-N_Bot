@@ -5,7 +5,7 @@ const date = require('date-and-time')
 const hastebin = require('hastebin')
 
 module.exports.run = async (bot, message, args) => {
-    if(!message.content.startsWith('ticket.'))return;  
+    if(!message.content.startsWith('.'))return;  
 
     let channel = message.channel;
 
