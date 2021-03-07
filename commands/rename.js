@@ -3,7 +3,7 @@ const db = require('quick.db');
 
 
 module.exports.run = async (bot, message, args) => {
-    if(!message.content.startsWith('ticket.'))return;  
+    if(!message.content.startsWith('.'))return;  
 
     let notallowed = new Discord.RichEmbed()
     .setColor('#e64b0e')
